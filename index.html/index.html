@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Mohamed Adam</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #1a1a1a, #000000);
+            background-size: 400% 400%;
+            animation: softMove 15s ease infinite;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        @keyframes softMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        .box {
+            backdrop-filter: blur(15px);
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 15px rgba(255,255,255,0.1);
+        }
+
+        .video-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 90%;
+        }
+
+        .video-box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 15px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+
+        img, video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<header>Mohamed Adam</header>
+
+<div class="box">
+    <img src="download (1).jpeg" alt="We Need To Talk">
+</div>
+
+<div class="video-row">
+    <div class="video-box">
+        <h3>شبلانجا</h3>
+        <video src="video.mp4" controls autoplay muted></video>
+    </div>
+
+    <div class="video-box">
+        <h3>تحيه للمطنوخ عبدالله رافت واولاده</h3>
+        <video src="video2.mp4" controls autoplay muted></video>
+    </div>
+</div>
+
+</body>
+</html>
